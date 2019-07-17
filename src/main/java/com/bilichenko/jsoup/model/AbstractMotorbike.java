@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@Table(name = "motorbikes")
+@Table(name = "motorcycles")
 public abstract class AbstractMotorbike {
 
 	@Id
@@ -21,7 +21,7 @@ public abstract class AbstractMotorbike {
 	@Column(name = "manufacturer_name")
 	private String manufacturerName;
 
-	@Column(name = "model_name")
+	@Column(name = "name")
 	private String modelName;
 
 	private String year;

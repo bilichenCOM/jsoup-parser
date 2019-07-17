@@ -5,7 +5,7 @@
     <session-factory>
         <!-- JDBC connection settings -->
         <property name="connection.driver_class">org.h2.Driver</property>
-        <property name="connection.url">jdbc:h2:~/test</property>
+        <property name="connection.url">jdbc:h2:~/diller_page</property>
         <property name="connection.username">sa</property>
         <property name="connection.password"/>
 
@@ -21,8 +21,5 @@
 
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
-
-        <!-- Mapping to hibernate mapping files -->
-        <mapping resource="org/kodejava/example/hibernate/model/Label.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
